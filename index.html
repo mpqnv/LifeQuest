@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title>
-    LifeQuest
-</title>
-</head> 
+    <head>
+        <title>
+            LifeQuest
+        </title>
+    </head> 
+
     <body>
         <section id="homepage">
-        <header>
-            <h1>
-                LifeQuest
-            </h1>
-        </header>
-        <h2>
-            Home
-        </h2>
-        <br>
-        <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" alt ="Profile picture" width ="50" height="50">
-        <h4>
-            Welcome to LifeQuest, your personal growth hub!
-        </h4>
-        <h4>
-            Paths:
-        </h4>
-        <ul>
-            <li><a href="#money-manager">Money Manager</a></li>
-            <br>
-            <li><a href="#healthy-habits">Healthy Habits Tracker</a></li>
-            <br>
-            <li><a href="#productivity-arena">Productivity Arena</a></li>
-            <br>
-            <li><a href="#achievements">Achievement System</a></li>
+            <header>
+                <h1>
+                    LifeQuest
+                </h1>
+            </header>
+
+            <h2>
+                Home
+            </h2>
+
             <br>
 
-        </ul>
+            <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" alt ="Profile picture" width ="50" height="50">
+           
+            <h4>
+                Welcome to LifeQuest, your personal growth hub!
+            </h4>
 
-        <h4>
-            Current level: <span id="current-level">0</span>
-        </h4>
+            <h4>
+                Paths:
+            </h4>
 
-        <h4>
-            Recent achievements: 
-        </h4>
+            <ul>
+                <li><a href="#money-manager">Money Manager</a></li>
+                <br>
+                <li><a href="#healthy-habits">Healthy Habits Tracker</a></li>
+                <br>
+                <li><a href="#productivity-arena">Productivity Arena</a></li>
+                <br>
+                <li><a href="#achievement-system">Achievement System</a></li>
+                <br>
+            </ul>
+
+            <h4>
+                Current level: <span id="current-level">0</span>
+            </h4>
+
+            <h4>
+                Recent achievements: 
+            </h4>
         </section>
+
         <section id="money-manager">
-        <h2>
-            Money Manager
-        </h2>
-        <form id="money-form">
-            <label for="income"> Enter your income:</label>
-            <input type="number" id="income" name="income" min="0">
-            <br> <br>
-            <label for="expenses"> Enter your expenses:</label>
-            <input type="number" id="expenses" name="expenses" min="0">
-            <br> <br>
-            <input type="submit" value="Submit">
-        </form>
-        <h4>
-            Remaining budget: <span id="remaining-budget">0$</span>
-        </h4>
+            <h2>
+                Money Manager
+            </h2>
+            <form id="money-form">
+                <label for="income"> Enter your income:</label>
+                <input type="number" id="income" name="income" min="0">
+                <br> <br>
+                <label for="expenses"> Enter your expenses:</label>
+                <input type="number" id="expenses" name="expenses" min="0">
+                <br> <br>
+                <input type="submit" value="Submit">
+            </form>
+            <h4>
+                Remaining budget: <span id="remaining-budget">0$</span>
+            </h4>
+        </section>
+
+        <section id="productivity-arena">
+            <h2>
+                Productivity Arena
+            </h2>
+
+            <label>
+                <input type="checkbox" value="goal-one">
+                Generic-Goal 1
+            </label>
+
+            <label>
+                <input type="checkbox" value="goal-two">
+                Generic-Goal 2
+            </label>
+
+            <label>
+                <input type="checkbox" value="goal-three">
+                Generic-Goal 3
+            </label>
+
+        </section>
+
+        <section id="achievement-system">
+            <h2>
+               Achievement System
+            </h2>
+
         </section>
     </body>
 </html>
