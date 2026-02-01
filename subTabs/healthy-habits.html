@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-        <section id="healthy-habits">
-            <h1>
-                Healthy Habits
-            </h1>
-        </section>
+<body>
 
-        
-        <a href="../index.html" style=" text-decoration: none; 
+    <section id="healthy-habits">
+        <h1>
+            Healthy Habits
+        </h1>
+
+        <form id="money-form">
+            <label for="calories">Enter your caloric intake:</label>
+            <input type="number" id="calories" name="calories" min="0">
+            <br> <br>
+            <label for="meals">Log your meals: </label>
+            <textarea id="meals" name="meals" rows="5" cols="20"></textarea>
+            <br> <br>
+            <label for="water">Enter your water intake in milliliters:</label>
+            <input type="number" id="water" name="water" min="0">
+            <br> <br>
+            <label for="sleep">Enter your hours of sleep last night:</label>
+            <input type="number" id="sleep" name="sleep" min="0">
+            <br> <br>
+            <label for="exercise">Enter your hours of exercise today:</label>
+            <input type="number" id="exercise" name="exercise" min="0">
+            <br> <br>
+            <label for="dailyEntry">Daily entry: </label>
+            <textarea id="dailyEntry" name="dailyEntry" rows="10" cols="40"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <a href="../index.html" style=" text-decoration: none; 
                                         display: inline-block; 
                                         margin-top: 695px; 
                                         margin-left: 1325px;
@@ -28,10 +50,10 @@
                                         line-height: 40px; 
                                         text-align: center;
                                         border-radius: 20px;
-                                        font-family: Arial, Helvetica, sans-serif;"
-                                        >
-            &lt; BACK
-        </a>
-        
-    </body>
+                                        font-family: Arial, Helvetica, sans-serif;">
+        &lt; BACK
+    </a>
+
+</body>
+
 </html>
