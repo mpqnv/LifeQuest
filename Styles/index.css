@@ -1,0 +1,6 @@
+.homepage{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: green;
+    padding: 15px 0px;
+}
