@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="Styles/index.css">
-        <title>
-            LifeQuest
-        </title>
-    </head> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles/index.css">
+    <title>LifeQuest</title>
+</head> 
+<body>
+    <div class="main-content">
+        <header class="top-nav">
+            <h1>LifeQuest</h1>
+            <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" class="profilePicture" alt="Profile">
+        </header>
 
-    <body>
-        <section id="homepage">
-            <header>
-                <h1>
-                    LifeQuest
-                </h1>
-            </header>
-              <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" class="profilePicture" alt ="Profile picture">
-
-            <h2>
-                Welcome to LifeQuest, your personal growth hub!
-            </h2>
-            
-            <h2>
-                Embark on a journey of self-improvement and achievement.
-            </h2>
-
-
-            <div class="container">
-                <div class = "boxes profileinfo"> Profile</div>
-                <div class = "boxes lifelevel"> Life Level: <span id="current-level">0</span></div>
-                <div class = "boxes achievements"> Achievements</div>
-
-            </div>
-                <footer>
-                <nav class="nav-Nav">
-                <a href="subTabs/money-manager.html">Money Manager</a>
-                <a href="subTabs/healthy-habits.html">Healthy Habits Tracker</a>
-                <a href="subTabs/productivity-arena.html">Productivity Arena</a>
-                <a href="subTabs/achievement-system.html">Achievement System</a>
-                </nav>
-            </footer>
+        <section class="welcome-area">
+            <h2>Welcome to LifeQuest, your personal growth hub!</h2>
+            <p>Embark on a journey of self-improvement and achievement.</p>
         </section>
-    </body>
+
+        <div class="container">
+            <div class="boxes">
+                <h3>Profile</h3>
+                <div class="box-content">
+                    <label for="name-input">Enter Name:</label>
+                    <input type="text" id="name-input" placeholder="Your Name">
+                    
+                    <label for="file-upload">Upload Photo:</label>
+                    <input type="file" id="file-upload">
+                    <button type="submit" class="save-btn">Save Profile</button>
+                </div>
+            </div>
+            
+            <div class="boxes">
+                <h3>Life Level</h3>
+                <div class="box-content">
+                    <span id="current-level">0</span>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <h3>Achievements</h3>
+                <div class="box-content">
+                    <p>0 Unlocked</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="nav-links">
+            <a href="subTabs/money-manager.html">Money Manager</a>
+            <a href="subTabs/healthy-habits.html">Healthy Habits Tracker</a>
+            <a href="subTabs/productivity-arena.html">Productivity Arena</a>
+            <a href="subTabs/achievement-system.html">Achievement System</a>
+        </nav>
+    </footer>
+</body>
 </html>
