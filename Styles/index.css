@@ -15,7 +15,7 @@ body {
 
 
 .top-nav {
-    background-color: red;
+    background-color: green;
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
@@ -60,7 +60,7 @@ body {
     padding: 20px;
     color: black;
     background-color: #f9f9f9;
-    border-bottom: 3px solid #e74c3c;
+    border-bottom: 3px solid green;
 }
 
 
@@ -103,6 +103,6 @@ footer {
 
 .nav-links a {
     text-decoration: none;
-    color: red;
+    color: green;
     font-weight: bold;
 }
