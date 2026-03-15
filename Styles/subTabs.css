@@ -1,3 +1,7 @@
+section{
+    flex: 1;
+}
+
 .nav-Nav{
     display: flex;
     justify-content: space-evenly;
@@ -53,8 +57,21 @@ body {
     text-align: center;
 
     display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.footer-Div{
+    padding: 10px;
+    background: green;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+.footerAnchors-Div{
+    display: flex;
+    gap: 15px;
 }
 
 .footer-Div a{
