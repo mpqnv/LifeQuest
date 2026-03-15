@@ -6,38 +6,44 @@
         <link rel="stylesheet" href="../Styles/subTabs.css">
     </head>
     <body>
-
-        
-        <header>
-            <h2>Productivity Arena</h2>
-        </header>
-
-        <div class="navBar-Div">
-            <nav class="nav-links">
-                <a href="money-manager.html">Money Manager</a>
-                <a href="healthy-habits.html">Healthy Habits Tracker</a>
-                <a href="achievement-system.html">Achievement System</a>
-                <a href="../index.html">Login</a>
-            </nav>
-        </div>
-        
-
         <section id="productivity-arena">
-            
-            <label style="display: block; margin-bottom: 10px;">
-                <input type="checkbox" value="goal-one">
-                Generic-Goal 1
-            </label>
+            <header class="subTabTitle-header">
+                <h1>Productivity Arena</h1>
+            </header>
 
-            <label style="display: block; margin-bottom: 10px;">
-                <input type="checkbox" value="goal-two">
-                Generic-Goal 2
-            </label>
+            <div class="navBar-Div">
+                <nav class="nav-links">
+                    <a href="money-manager.html">Money Manager</a>
+                    <a href="healthy-habits.html">Healthy Habits Tracker</a>
+                    <a href="a8chievement-system.html">Achievement System</a>
+                    <a href="../index.html">Login</a>
+                </nav>
+            </div>
 
-            <label style="display: block; margin-bottom: 10px;">
-                <input type="checkbox" value="goal-three">
-                Generic-Goal 3
-            </label>
+            <div class="tasks">
+                <h3>Daily Goals</h3>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" class="goal-check" value="10">
+                    Generic Goal 1
+                </label>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" class="goal-check" value="10">
+                    Generic Goal 2
+                </label>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" class="goal-check" value="10">
+                    Generic Goal 3
+                </label>
+            </div>
+
+            <div class="timer-section">
+                <h3>Focus Timer</h3>
+            </div>
+
+            <div class="stats-section">
+                <h4>Current Score: <span id="score">0</span> pts</h4>
+                <h4>Streak Milestone: <span id="streak">0</span> Days</h4>
+            </div>
         </section>
 
         <h4>
