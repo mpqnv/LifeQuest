@@ -40,3 +40,27 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.lifeQuestLogo-Img{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.footer-Div{
+    padding: 10px;
+    background: green;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-Div a{
+    padding: 10px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
