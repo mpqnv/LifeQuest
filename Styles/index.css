@@ -122,49 +122,55 @@ footer {
 
 @media (min-width: 768px) {
     .top-nav {
+        flex-direction: column;
         padding: 15px 40px;
     }
 
     .container {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        padding: 20px;
+        flex-direction: column;
     }
 
     .boxes {
+        flex-direction: column;
         width: 280px;
     }
 
     .nav-links {
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
     }
     .footer{
-        padding: 25px;
+        flex-direction: column;
     }
 }
 @media (min-width: 1024px) {
     .top-nav {
-        padding: 20px 80px;
+        flex-direction: row;
     }
     .welcome-area{
+        flex-direction: row;
         padding: 30px 20px;
     }
     .container {
+        flex-direction: row;
         gap: 30px;
         padding: 30px;
     }
 
     .boxes {
+        flex-direction: row;
         width: 320px;
     }
 
     .nav-links {
+        flex-direction: row;
         gap: 30px;
     }
     .footer{
+        flex-direction: row;
         padding: 35px;
     }
 }
