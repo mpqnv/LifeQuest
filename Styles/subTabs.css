@@ -12,11 +12,7 @@ section{
 
 .nav-links {
     display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-=======
     justify-content: space-evenly;
->>>>>>> fe59b987a8d1a4a8932bc0033cbf1d4239d594b0
     gap: 20px;
     flex-wrap: wrap;
 }
