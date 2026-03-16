@@ -1,4 +1,4 @@
-.nav-Nav{
+.nav-Nav {
     display: flex;
     justify-content: space-evenly;
     background-color: green;
@@ -22,4 +22,20 @@ footer {
     padding: 30px;
     background: green;
     text-align: center;
+}
+
+#title {
+    margin: 15px 15px 15px 15px
+}
+
+/* From index.html*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

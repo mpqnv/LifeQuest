@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
-        <link rel="stylesheet" href="../Styles/subTabs.css">
-    </head>
-    
-    <body>
-        <section id="money-manager">
-            <header class="subTabTitle-header">
-                <h1>Money Manager</h1>
-            </header>
-            <div class="navBar-Div">
-                <nav class="nav-links">
-                    <a href="healthy-habits.html">Healthy Habits Tracker</a>
-                    <a href="productivity-arena.html">Productivity Arena</a>
-                    <a href="achievement-system.html">Achievement System</a>
-                    <a href="../index.html">Login</a>
-                </nav>
-            </div>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Money Manager</title>
+    <link rel="stylesheet" href="../Styles/subTabs.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <header class="top-nav">
+            <h1>Money Manager</h1>
+            <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" class="profilePicture" alt="Profile">
+        </header>
+
+        <div class="container">
             <form id="money-form">
                 <label for="income"> Enter your income:</label>
                 <input type="number" id="income" name="income" min="0">
@@ -33,10 +28,17 @@
             <h4>
                 Remaining budget: <span id="remaining-budget">0$</span>
             </h4>
-        </section>
+        </div>
+    </div>
 
-        <footer>
-            
-        </footer>
-    </body>
+    <footer class="footer">
+        <nav class="nav-links">
+            <a href="healthy-habits.html">Healthy Habits Tracker</a>
+            <a href="productivity-arena.html">Productivity Arena</a>
+            <a href="achievement-system.html">Achievement System</a>
+            <a href="index.html">Login</a>
+        </nav>
+    </footer>
+</body>
+
 </html>
