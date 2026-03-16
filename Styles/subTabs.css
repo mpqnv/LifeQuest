@@ -11,8 +11,8 @@ section{
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -20,6 +20,12 @@ section{
     text-decoration: none;
     color: green;
     font-weight: bold;
+    font-size: 100%;
+    transition: font-size 0.3s;
+}
+
+.nav-links a:hover{
+    font-size: 110%;
 }
 
 .navBar-Div {
