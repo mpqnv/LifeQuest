@@ -6,13 +6,14 @@ section{
     display: flex;
     justify-content: space-evenly;
     background-color: green;
-    padding: 15px 0px;
+    padding: 10px 35px;
+    flex-direction: column;
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -23,7 +24,7 @@ section{
 }
 
 .navBar-Div {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     background-color: white;
     box-shadow: 0px 1px 2px rgb(83, 83, 83);
@@ -36,32 +37,34 @@ body {
     background-color: #f0f2f5;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .subTabTitle-header {
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex;
     color: white;
     background-color: green;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .lifeQuestLogo-Img{
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .footer-Div{
-    padding: 10px;
+    padding: 7px;
     background: green;
     text-align: center;
-
+    flex-direction: column;
     display: flex;
     justify-content: left;
     flex-wrap: nowrap;
+    
 }
 
 .footer-Div{
@@ -70,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .footerAnchors-Div{
@@ -83,4 +87,38 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+}
+@media(min-width: 768px){
+    .footer-Div{
+        justify-content: space-between;
+    }
+    .lifeQuestLogo-Img{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-Nav{
+        flex-direction: row;
+        padding: 15px 40px;
+    }
+    .subTabTitle-header{
+        flex-direction: row;
+        padding: 20px 30px;
+    }
+    .footer-Div{
+        flex-direction: row;
+        padding: 15px 30px;
+    }
+}
+@media(min-width: 1024px){
+    .nav-Nav{
+        flex-direction: row;
+        padding: 30px 55px;
+    }
+    .subTabTitle-header{
+        flex-direction: row;
+        padding: 30px 50px;
+    }
+    .footer-Div{
+        flex-direction: row;
+    }
 }
