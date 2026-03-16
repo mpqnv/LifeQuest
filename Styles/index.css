@@ -105,6 +105,18 @@ footer {
     text-decoration: none;
     color: green;
     font-weight: bold;
+
+    transition: font-size 0.3s;
+}
+
+.nav-links a:hover{
+    font-size: 110%;
+    border-color: green; 
+}
+
+.aboutContact-Div{
+    display: flex;
+    gap: 15px;
 }
 
 
