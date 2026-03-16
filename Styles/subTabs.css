@@ -1,12 +1,8 @@
-section{
+section {
     flex: 1;
 }
 
-.main-content{
-    flex: 1;
-}
-
-.nav-Nav{
+.nav-Nav {
     display: flex;
     justify-content: space-evenly;
     background-color: green;
@@ -29,7 +25,7 @@ section{
     transition: font-size 0.3s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     font-size: 110%;
 }
 
@@ -68,13 +64,13 @@ body {
     flex-direction: column;
 }
 
-.lifeQuestLogo-Img{
+.lifeQuestLogo-Img {
     width: 30px;
     height: 30px;
     border-radius: 5px;
 }
 
-.footer-Div{
+.footer-Div {
     padding: 7px;
     background: green;
     text-align: center;
@@ -82,62 +78,10 @@ body {
     display: flex;
     justify-content: left;
     flex-wrap: nowrap;
-    
+
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 15px;
-    flex-wrap: wrap;
-}
-
-#money-manager h4{
-    text-align: center;
-}
-
-.boxes {
-    background: white;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 320px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    overflow: hidden;
-}
-
-.boxes h3 {
-    margin: 0;
-    padding: 20px;
-    color: black;
-    background-color: #f9f9f9;
-    border-bottom: 3px solid green;
-}
-
-.box-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.box-content label {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: black;
-}
-
-.box-content input {
-    width: 85%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-.footer-Div{
+.footer-Div {
     padding: 10px;
     background: green;
     display: flex;
@@ -146,53 +90,58 @@ body {
     flex-direction: column;
 }
 
-.footerAnchors-Div{
+.footerAnchors-Div {
     display: flex;
     gap: 15px;
 }
 
-footer{
-    margin-top: auto;
-}
-
-.footer-Div a{
+.footer-Div a {
     padding: 10px;
 
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
 }
-@media(min-width: 768px){
-    .footer-Div{
+
+
+@media(min-width: 768px) {
+    .footer-Div {
         justify-content: space-between;
     }
-    .lifeQuestLogo-Img{
+
+    .lifeQuestLogo-Img {
         width: 50px;
         height: 50px;
     }
-    .nav-Nav{
+
+    .nav-Nav {
         flex-direction: row;
         padding: 15px 40px;
     }
-    .subTabTitle-header{
+
+    .subTabTitle-header {
         flex-direction: row;
         padding: 20px 30px;
     }
-    .footer-Div{
+
+    .footer-Div {
         flex-direction: row;
         padding: 15px 30px;
     }
 }
-@media(min-width: 1024px){
-    .nav-Nav{
+
+@media(min-width: 1024px) {
+    .nav-Nav {
         flex-direction: row;
         padding: 30px 55px;
     }
-    .subTabTitle-header{
+
+    .subTabTitle-header {
         flex-direction: row;
         padding: 30px 50px;
     }
-    .footer-Div{
+
+    .footer-Div {
         flex-direction: row;
     }
 }
