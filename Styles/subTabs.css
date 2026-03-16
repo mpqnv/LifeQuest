@@ -98,7 +98,6 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-<<<<<<< HEAD
 }
 @media(min-width: 768px){
     .footer-Div{
@@ -133,13 +132,4 @@ body {
     .footer-Div{
         flex-direction: row;
     }
-=======
-
-    font-size: 100%;
-    transition: font-size 0.3s;
-}
-
-.footer-Div a:hover{
-    font-size: 110%;
->>>>>>> fe59b987a8d1a4a8932bc0033cbf1d4239d594b0
 }
