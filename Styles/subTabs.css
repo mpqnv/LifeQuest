@@ -1,3 +1,29 @@
+.tasks {
+    margin: 25px 25px;
+}
+
+.timer-section {
+    margin: 25px 25px;
+}
+
+.stats-section {
+    margin: 25px 25px;
+}
+
+.box-content label{
+    display: block; 
+    margin-bottom: 10px;
+}
+
+#virtual-rewards {
+    margin: 50px 25px;
+}
+
+#feedback {
+    margin: 50px 25px;
+}
+
+
 section {
     flex: 1;
 }
