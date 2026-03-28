@@ -1,6 +1,10 @@
-.nav-Nav{
+.nav-Nav {
     display: flex;
     justify-content: space-evenly;
     background-color: green;
     padding: 15px 0px;
+}
+
+p {
+    text-align: left;
 }
