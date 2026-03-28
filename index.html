@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JavaScript/main.js" defer></script>
     <link rel="stylesheet" href="Styles/index.css">
     <title>LifeQuest</title>
 </head> 
@@ -11,11 +10,11 @@
     <div class="main-content">
         <header class="top-nav">
             <h1>LifeQuest</h1>
-            <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" class="profilePicture" alt="Profile">
+            <img src="Images-lifequest/blank-profile-picture-973460_1280.webp" id="nav-profile-pic" class="profilePicture" alt="Profile">
         </header>
 
         <section class="welcome-area">
-            <h2>Welcome to LifeQuest, your personal growth hub!</h2>
+            <h2>Welcome, <span id="display-name">User</span>!</h2>
             <p>Embark on a journey of self-improvement and achievement.</p>
         </section>
 
@@ -26,23 +25,33 @@
                     <label for="name-input">Enter Name:</label>
                     <input type="text" id="name-input" placeholder="Your Name">
                     
-                    <label for="file-upload">Upload Photo:</label>
-                    <input type="file" id="file-upload">
-                    <button type="submit" class="save-btn">Save Profile</button>
+                    <label for="file-upload" class="custom-file-upload">Choose Photo</label>
+                    <input type="file" id="file-upload" accept="image/*" style="display:none;">
+                    
+                    <button type="button" id="save-btn" class="save-btn">Save Profile</button>
+                    <button type="button" id="reset-btn" class="save-btn" style="background-color: red;">Reset Profile</button>
                 </div>
             </div>
             
             <div class="boxes">
                 <h3>Life Level</h3>
                 <div class="box-content">
-                    <span id="current-level">0</span>
+                    <div class="level-circle">
+                        <span id="current-level">1</span>
+                    </div>
                 </div>
             </div>
 
             <div class="boxes">
                 <h3>Achievements</h3>
                 <div class="box-content">
-                    <p>0 Unlocked</p>
+                    <div class="achievement-grid">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
+                    <p id="achievement-text">0 / 4 Unlocked</p>
                 </div>
             </div>
         </div>
@@ -60,8 +69,7 @@
                 <a href="../contact.html">Contact</a>
             </div>
         </nav>
-
-            
     </footer>
+    <script src="JavaScript/index.js" defer></script>
 </body>
 </html>
