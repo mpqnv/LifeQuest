@@ -9,10 +9,13 @@ body {
     min-height: 100vh;
 }
 
+h1, h2, h3, p, span, label, button, a {
+    font-weight: 400;
+}
+
 .main-content {
     flex: 1;
 }
-
 
 .top-nav {
     background-color: green;
@@ -28,6 +31,7 @@ body {
     height: 50px;
     border-radius: 50%;
     background: white;
+    object-fit: cover;
 }
 
 .welcome-area {
@@ -35,26 +39,29 @@ body {
     padding: 25px 15px;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 15px;
     padding: 15px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 
 .boxes {
     background: white;
     border-radius: 12px;
-    width: 90%;
+    flex: 1;
+    min-width: 300px;
     max-width: 320px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .boxes h3 {
     margin: 0;
@@ -64,22 +71,34 @@ body {
     border-bottom: 3px solid green;
 }
 
-
 .box-content {
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 12px;
+    flex: 1;
+}
+
+.level-circle {
+    width: 90px;
+    height: 90px;
+    border: 5px solid green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    color: green;
 }
 
 .box-content label {
     font-size: 0.9rem;
-    font-weight: bold;
     color: black;
 }
 
-.box-content input {
+.box-content input[type="text"] {
     width: 85%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -87,6 +106,40 @@ body {
     box-sizing: border-box;
 }
 
+.custom-file-upload {
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.85rem;
+}
+
+.save-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 85%;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.slot {
+    width: 50px;
+    height: 50px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+}
 
 footer {
     padding: 20px;
@@ -106,72 +159,42 @@ footer {
     text-decoration: none;
     color: green;
     font-weight: bold;
-
     transition: font-size 0.3s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     font-size: 110%;
-    border-color: green; 
 }
 
-.aboutContact-Div{
+.aboutContact-Div {
     display: flex;
     gap: 15px;
 }
-
 
 @media (min-width: 768px) {
     .top-nav {
         flex-direction: column;
         padding: 15px 40px;
     }
-
     .container {
-        flex-wrap: wrap;
-        justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
-
-    .boxes {
-        flex-direction: column;
-        width: 280px;
-    }
-
     .nav-links {
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .footer{
         flex-direction: column;
     }
 }
+
 @media (min-width: 1024px) {
     .top-nav {
         flex-direction: row;
     }
-    .welcome-area{
-        flex-direction: row;
-        padding: 30px 20px;
-    }
     .container {
         flex-direction: row;
-        gap: 30px;
-        padding: 30px;
+        align-items: stretch;
     }
-
-    .boxes {
-        flex-direction: row;
-        width: 320px;
-    }
-
     .nav-links {
         flex-direction: row;
         gap: 30px;
-    }
-    .footer{
-        flex-direction: row;
-        padding: 35px;
     }
 }
