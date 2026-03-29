@@ -1,3 +1,9 @@
+:root {
+    --main-green: linear-gradient(135deg, #1db954, #0f9b3d);
+    --green-solid: #1db954;
+    --green-dark: #0f9b3d;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,15 +23,16 @@ h1, h2, h3, p, span, label, button, a {
 }
 
 .top-nav {
-    background-color: green;
+    background: var(--main-green);
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.top-nav h1{
+.top-nav h1 {
     color: lightgrey;
     font-weight: bold;
 }
@@ -70,14 +77,15 @@ h1, h2, h3, p, span, label, button, a {
 .boxes h3 {
     margin: 0;
     padding: 20px;
-    color: black;
-    background-color: green;
-
+    background: var(--main-green);
+    color: white;
+    letter-spacing: 0.5px;
 }
 
-h3{
-    color: white
+h3 {
+    color: white;
 }
+
 .box-content {
     background-color: white;
     padding: 30px 20px;
@@ -92,13 +100,16 @@ h3{
 .level-circle {
     width: 90px;
     height: 90px;
-    border: 5px solid green;
+    border: 5px solid transparent;
     border-radius: 50%;
+    background: 
+        linear-gradient(white, white) padding-box,
+        var(--main-green) border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
-    color: green;
+    color: var(--green-solid);
 }
 
 .box-content label {
@@ -124,7 +135,7 @@ h3{
 }
 
 .save-btn {
-    background-color: green;
+    background: var(--main-green);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -133,6 +144,13 @@ h3{
     font-weight: bold;
     margin-top: 10px;
     width: 85%;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
 .achievement-grid {
@@ -165,12 +183,13 @@ footer {
 
 .nav-links a {
     text-decoration: none;
-    color: green;
+    color: var(--green-solid);
     font-weight: bold;
-    transition: font-size 0.3s;
+    transition: all 0.3s;
 }
 
 .nav-links a:hover {
+    color: var(--green-dark);
     font-size: 110%;
 }
 
