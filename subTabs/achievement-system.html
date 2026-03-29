@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Styles/subTabs.css">
     <title>Document</title>
+    <script src="../JavaScript/achievement.js"></script>
 </head>
 
 <body>
@@ -24,18 +25,24 @@
         
 
         <section id="virtual-rewards" class="boxes">
-            <div class="box-contents">
+            <div>
                 <h3>
                     Unlock Virtual Rewards or Badges for consistent use
                 </h3>
-                <p>
-                    (Unlocked Virtual Rewards) or (Badges for consistent use)
+                <div class="badges-Div">
+                    <div class="badge" id="badge-1"></div>
+                    <div class="badge" id="badge-2"></div>
+                    <div class="badge" id="badge-3"></div>
+                </div>
+
+                <p id="badge-status" style="font-weight: bold; color: #555;">
+                    0 / 3 Badges Unlocked
                 </p>
             </div>
         </section>
 
         <section id="feedback" class="boxes">
-            <div class="box-contents">
+            <div>
                 <h3>
                     Feedback like pop-ups, icons, or confetti effects upon completing challenges
                 </h3>
