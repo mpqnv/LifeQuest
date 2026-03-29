@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Styles/subTabs.css">
     <title>Document</title>
-    <script src="../JavaScript/achievement.js"></script>
+    <script src="../JavaScript/achievement.js" defer></script>
 </head>
 
 <body>
@@ -36,30 +36,34 @@
                 </div>
 
                 <p id="badge-status" style="font-weight: bold; color: #555;">
-                    0 / 3 Badges Unlocked
+                    <span class="counter-Span">0</span> / 3 Badges Unlocked
                 </p>
             </div>
         </section>
 
         <section id="feedback" class="boxes">
             <div>
-                <h3>
-                    Feedback like pop-ups, icons, or confetti effects upon completing challenges
-                </h3>
+                <p>Complete a challenge!</p>
 
-                <p>
-                    (Feedback) or (Confetti Icons)
-                </p>
+                <button id="claim-Button">COMPLETE CHALLENGE</button>
             </div>
         </section>
 
     </section>
 
+    <div id="popup-Div" class="hidden">
+        <h2>SUCCESS!</h2>
+        
+        <div class="award-circle">
+            AWARD
+        </div>
+        
+        <p>You unlocked a new achievement badge.</p>
+        <button id="closePopup-Button">AWESOME!</button>
+    </div>
+
     <footer>
-
         <div class="footer-Div">
-
-
             <div class="footerAnchors-Div">
                 <a href="../about.html">About</a>
                 <a href="../contact.html">Contact</a>

@@ -35,6 +35,102 @@ body {
     opacity: 0.4;
 }
 
+.badge.unlocked {
+    opacity: 1;
+    background-color: lightskyblue;
+    color: white;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: bold;
+    font-size: 14px;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#claim-Button{
+    padding: 12px 24px; 
+    margin: 20px;
+
+    border-radius: 6px; 
+    border: none; 
+    
+    background-color: green; 
+    color: white; 
+    
+    cursor: pointer; 
+    
+    font-weight: bold; 
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#popup-Div {
+    width: 320px;
+    height: fit-content;
+    position: fixed;
+
+    inset: 0; 
+    margin: auto;
+    border-radius: 10%;
+    padding: 30px;
+    
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+}
+
+#popup-Div div{
+    width: 80px; 
+    height: 80px; 
+
+    border-radius: 50%; 
+
+    background-color: lightskyblue;
+    color: white;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    font-size: 18px; 
+    font-weight: bold;
+    
+    margin: 20px auto;  
+}
+
+#popup-Div h2 {
+    color: green;
+    font-size: 29px;
+
+    margin-top: 0;
+}
+
+#popup-Div p {
+    font-weight: bold;
+    color: black;
+    font-size: 17.5px;
+
+    margin-bottom: 25px;
+}
+
+#closePopup-Button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    background: #f9f9f9;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
 .subTabTitle-header {
     width: 100%;
     padding: 10px 20px;
@@ -116,7 +212,7 @@ body {
 }
 
 .box-content label {
-    font-size: 0.9rem;
+    font-size: 14.5px;
     font-weight: bold;
     color: black;
 }
