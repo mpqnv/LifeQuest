@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="../Styles/subTabs.css">
+    <script src="../JavaScript/money_manager.js"></script>
 </head>
 
 <body>
-    <section id="money-manager">
+    <section id="money-manager" method="post">
         <header class="subTabTitle-header">
             <h1>Money Manager</h1>
         </header>
@@ -22,24 +23,22 @@
         </div>
 
         <div class="container">
-            <form id="money-form">
-                <div class="boxes">
-                    <div class="box-content">
-                        <br>
-                        <label for="income">Enter your income:</label>
-                        <input type="number" id="income" name="income" min="0">
-                        <br>
-                        <label for="expenses">Enter your expenses:</label>
-                        <input type="number" id="expenses" name="expenses" min="0">
-                        <br>
-                        <input type="submit" value="Submit">
-                        <h4>
-                            Remaining budget: <span id="remaining-budget">0$</span>
-                        </h4>
-                        <br>
-                    </div>
+            <div class="boxes">
+                <div class="box-content">
+                    <br>
+                    <label for="income">Enter your income:</label>
+                    <input type="number" id="income" name="income" min="0" value="0">
+                    <br>
+                    <label for="expenses">Enter your expenses:</label>
+                    <input type="number" id="expenses" name="expenses" min="0" value="0">
+                    <br>
+                    <button id="submit">Submit</button>
+                    <h4>
+                        Remaining budget: <span id="remaining-budget">$0</span>
+                    </h4>
+                    <br>
                 </div>
-            </form>
+            </div>
         </div>
 
     </section>
