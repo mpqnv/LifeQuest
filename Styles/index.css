@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    /* background-color: #f0f2f5; */
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
@@ -72,13 +71,15 @@ h1, h2, h3, p, span, label, button, a {
     margin: 0;
     padding: 20px;
     color: black;
-    background-color: #f9f9f9;
-    background-color: lightskyblue;
-    /* border-bottom: 3px solid green; */
+    background-color: green;
+
 }
 
+h3{
+    color: white
+}
 .box-content {
-    background-color: rgba(135, 206, 250, 0.2);
+    background-color: white;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;

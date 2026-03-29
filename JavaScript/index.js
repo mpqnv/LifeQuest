@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayName.textContent = savedName;
         nameInput.value = savedName;
     } else {
-        displayName.textContent = "Username";
+        displayName.textContent = "User";
     }
 
     if (savedPhoto) {
