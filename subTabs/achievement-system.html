@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Styles/subTabs.css">
-    <title>Achievements</title>
+    <title>Document</title>
+    <script src="../JavaScript/achievement.js" defer></script>
 </head>
 
 <body>
@@ -24,35 +25,45 @@
         
 
         <section id="virtual-rewards" class="boxes">
-            <div class="box-contents">
+            <div>
                 <h3>
                     Unlock Virtual Rewards or Badges for consistent use
                 </h3>
-                <p>
-                    (Unlocked Virtual Rewards) or (Badges for consistent use)
+                <div class="badges-Div">
+                    <div class="badge" id="badge-1"></div>
+                    <div class="badge" id="badge-2"></div>
+                    <div class="badge" id="badge-3"></div>
+                </div>
+
+                <p id="badge-status" style="font-weight: bold; color: #555;">
+                    <span class="counter-Span">0</span> / 3 Badges Unlocked
                 </p>
             </div>
         </section>
 
         <section id="feedback" class="boxes">
-            <div class="box-contents">
-                <h3>
-                    Feedback like pop-ups, icons, or confetti effects upon completing challenges
-                </h3>
+            <div>
+                <p>Complete a challenge!</p>
 
-                <p>
-                    (Feedback) or (Confetti Icons)
-                </p>
+                <button id="claim-Button">COMPLETE CHALLENGE</button>
             </div>
         </section>
 
     </section>
 
+    <div id="popup-Div" class="hidden">
+        <h2>SUCCESS!</h2>
+        
+        <div class="award-circle">
+            AWARD
+        </div>
+        
+        <p>You unlocked a new achievement badge.</p>
+        <button id="closePopup-Button">AWESOME!</button>
+    </div>
+
     <footer>
-
         <div class="footer-Div">
-
-
             <div class="footerAnchors-Div">
                 <a href="../about.html">About</a>
                 <a href="../contact.html">Contact</a>
