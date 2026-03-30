@@ -60,7 +60,7 @@ body {
     width: 100%;
 }
 
-/* BADGES */
+
 .badges-Div {
     display: flex; 
     gap: 20px; 
@@ -185,7 +185,7 @@ body {
     opacity: 1;
 }
 
-/* HEADER */
+
 .subTabTitle-header {
     width: 100%;
     padding: 10px 20px;
@@ -233,7 +233,7 @@ body {
     font-size: 110%;
 }
 
-/* MAIN CONTAINER */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -242,7 +242,7 @@ body {
     flex: 1;
 }
 
-/* BOXES */
+
 .boxes {
     background: white;
     border-radius: 12px;
@@ -254,7 +254,7 @@ body {
     margin: 20px auto;
 }
 
-/* REMOVED BLUE COMPLETELY */
+
 .boxes h3 {
     margin: 0;
     padding: 20px;
@@ -263,7 +263,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* CONTENT */
+
 .box-content {
     padding: 20px;
     display: flex;
@@ -313,7 +313,7 @@ body {
     opacity: 0.8;
 }
 
-/* RESPONSIVE */
+
 @media(min-width: 768px) {
     .subTabTitle-header {
         padding: 20px 30px;
